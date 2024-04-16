@@ -31,8 +31,8 @@
 
 <script setup lang="ts">
 import type { Project } from '@/types/project';
-import Avatar from '@/components/Avatar.vue';
-import StatsCard from '@/components/StatsCard.vue';
+import Avatar from '@/components/lib/Avatar.vue';
+import StatsCard from '@/components/layouts/StatsCard.vue';
 
 defineProps<{
   projects?: Project[];

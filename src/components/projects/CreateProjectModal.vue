@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import AppModal from '@/components/Modal.vue';
-import CreateProjectForm from '@/components/CreateProjectForm.vue';
+import AppModal from '@/components/lib/Modal.vue';
+import CreateProjectForm from '@/components/projects/CreateProjectForm.vue';
 
 defineProps<{
   isOpen: boolean;

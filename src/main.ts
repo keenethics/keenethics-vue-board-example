@@ -7,7 +7,7 @@ import './style.css';
 
 if (process.env.NODE_ENV === 'development') {
   const { worker } = await import('./api/server');
-  await worker.start();
+  await worker.start({ onUnhandledRequest: 'bypass' });
 }
 
 const app = createApp(App);

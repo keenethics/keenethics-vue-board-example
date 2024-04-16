@@ -1,15 +1,14 @@
 <template>
   <component
     :is="component"
-    v-ripple
-    class="p-3 cursor-pointer text-2xl transition-colors hover:bg-gray-100 rounded-lg flex"
+    class="p-3 cursor-pointer text-base transition-colors hover:bg-gray-50 rounded-full flex border border-gray-1"
   >
     <Icon :name="icon" />
   </component>
 </template>
 
 <script lang="ts" setup>
-import Icon from '@/components/Icon.vue';
+import Icon from '@/components/lib/Icon.vue';
 import { IconName } from '@/types/ui';
 
 withDefaults(

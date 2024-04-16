@@ -24,8 +24,8 @@ import type { Project } from '@/types/project';
 import { useMutation, useQueryClient } from '@tanstack/vue-query';
 import { useForm } from 'vee-validate';
 import { toTypedSchema } from '@vee-validate/yup';
-import TextField from '@/components/TextField.vue';
-import Button from '@/components/Button.vue';
+import TextField from '@/components/lib/TextField.vue';
+import Button from '@/components/lib/Button.vue';
 import projectService from '@/api/project';
 import projectSchema, { type ProjectSchema } from '@/schemas/project.schema';
 

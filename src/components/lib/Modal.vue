@@ -28,8 +28,8 @@
 <script lang="ts" setup>
 import { toRefs } from 'vue';
 import useClosableDropdown from '@/combosables/useClosableDropdown';
-import Icon from '@/components/Icon.vue';
-import ModalBackdrop from '@/components/ModalBackdrop.vue';
+import Icon from '@/components/lib/Icon.vue';
+import ModalBackdrop from '@/components/lib/ModalBackdrop.vue';
 
 const props = defineProps<{
   isOpen: boolean;

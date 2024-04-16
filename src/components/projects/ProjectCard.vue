@@ -39,15 +39,15 @@
 </template>
 
 <script lang="ts" setup>
+import type { Project } from '@/types/project';
+import { toRefs } from 'vue';
+import { useMutation, useQueryClient } from '@tanstack/vue-query';
+import DeleteProjectModal from '@/components/projects/DeleteProjectModal.vue';
+import Avatar from '@/components/lib/Avatar.vue';
+import Star from '@/components/lib/Star.vue';
+import useToggleState from '@/combosables/useToggleState';
 import { createdAgo } from '@/utils/dates';
 import projectService from '@/api/project';
-import useToggleState from '@/combosables/useToggleState';
-import DeleteProjectModal from '@/components/DeleteProjectModal.vue';
-import Avatar from '@/components/Avatar.vue';
-import Star from '@/components/Star.vue';
-import { Project } from '@/types/project';
-import { useMutation, useQueryClient } from '@tanstack/vue-query';
-import { toRefs } from 'vue';
 
 const props = defineProps<{
   project: Project;

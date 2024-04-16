@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-import SidebarIconAction from '@/components/SidebarIconAction.vue';
+import SidebarIconAction from '@/components/layouts/SidebarIconAction.vue';
 
 const items = [
   { icon: 'objects-column' },

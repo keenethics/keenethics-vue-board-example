@@ -11,10 +11,11 @@
 </template>
 
 <script lang="ts" setup>
-import projectService from '@/api/project';
-import AppModal from '@/components/Modal.vue';
-import { Project } from '@/types/project';
+import type { Project } from '@/types/project';
 import { useMutation, useQueryClient } from '@tanstack/vue-query';
+import AppModal from '@/components/lib/Modal.vue';
+import projectService from '@/api/project';
+
 const props = defineProps<{
   isOpen: boolean;
   name: string;

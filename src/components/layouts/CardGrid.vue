@@ -25,9 +25,9 @@ import {
   DraggableClassNames,
   SwapAnimationOptions,
 } from '@shopify/draggable';
-import SingleProject from '@/components/SingleProject.vue';
 import type { ChangeOrderPayload, Project } from '@/types/project';
-import ProjectCard from '@/components/ProjectCard.vue';
+import SingleProject from '@/components/projects/SingleProject.vue';
+import ProjectCard from '@/components/projects/ProjectCard.vue';
 import { computed, onMounted, ref, toRefs } from 'vue';
 import { isPrevented } from '@/utils/draggable';
 

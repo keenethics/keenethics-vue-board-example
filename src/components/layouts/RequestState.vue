@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import Spinner from '@/components/Spinner.vue';
+import Spinner from '@/components/lib/Spinner.vue';
 
 interface Props {
   isLoading: boolean;

@@ -19,8 +19,8 @@
 
 <script setup lang="ts">
 import { toRefs } from 'vue';
-import ModalBackdrop from '@/components/ModalBackdrop.vue';
-import Icon from '@/components/Icon.vue';
+import ModalBackdrop from '@/components/lib/ModalBackdrop.vue';
+import Icon from '@/components/lib/Icon.vue';
 import useClosableDropdown from '@/combosables/useClosableDropdown';
 
 const props = defineProps<{

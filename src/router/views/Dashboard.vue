@@ -17,14 +17,14 @@
 
 <script setup lang="ts">
 import type { ChangeOrderPayload, Project } from '@/types/project';
-import InfoSidebar from '@/components/InfoSidebar.vue';
-import Drawer from '@/components/Drawer.vue';
-import Header from '@/components/Header.vue';
-import RequestState from '@/components/RequestState.vue';
-import CardGrid from '@/components/CardGrid.vue';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/vue-query';
-import projectService from '@/api/project';
+import InfoSidebar from '@/components/layouts/InfoSidebar.vue';
+import Drawer from '@/components/lib/Drawer.vue';
+import Header from '@/components/layouts/Header.vue';
+import RequestState from '@/components/layouts/RequestState.vue';
+import CardGrid from '@/components/layouts/CardGrid.vue';
 import { onSort } from '@/shared/sort';
+import projectService from '@/api/project';
 import useToggleState from '@/combosables/useToggleState';
 
 const { data, isPending, error } = useQuery({

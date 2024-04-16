@@ -29,10 +29,10 @@
 </template>
 
 <script setup lang="ts">
-import CreateProjectModal from '@/components/CreateProjectModal.vue';
-import Button from '@/components/Button.vue';
-import ActionIconButton from '@/components/ActionIconButton.vue';
-import Icon from '@/components/Icon.vue';
+import CreateProjectModal from '@/components/projects/CreateProjectModal.vue';
+import Button from '@/components/lib/Button.vue';
+import Icon from '@/components/lib/Icon.vue';
+import ActionIconButton from '@/components/layouts/ActionIconButton.vue';
 import useToggleState from '@/combosables/useToggleState';
 
 const [isCreateModalOpen, openCreateProjectModal, closeCreateProjectModal] =
