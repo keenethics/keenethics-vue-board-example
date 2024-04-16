@@ -1,0 +1,4 @@
+dist
+scripts
+.eslintrc.cjs
+tailwind.config.js

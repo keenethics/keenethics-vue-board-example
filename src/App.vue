@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Layout from '@/components/Layout.vue';
+</script>
 
 <template>
-  <div class="bg-blue-50 h-screen"></div>
+  <Layout>
+    <RouterView />
+  </Layout>
 </template>

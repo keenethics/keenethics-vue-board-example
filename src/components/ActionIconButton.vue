@@ -1,0 +1,23 @@
+<template>
+  <component
+    :is="component"
+    class="p-3 cursor-pointer text-base transition-colors hover:bg-gray-50 rounded-full flex border border-gray-1"
+  >
+    <Icon :name="icon" />
+  </component>
+</template>
+
+<script lang="ts" setup>
+import Icon from '@/components/Icon.vue';
+import { IconName } from '@/types/ui';
+
+withDefaults(
+  defineProps<{
+    icon: IconName;
+    component?: 'button' | 'a';
+  }>(),
+  {
+    component: 'button',
+  },
+);
+</script>
